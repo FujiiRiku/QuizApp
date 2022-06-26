@@ -1,11 +1,14 @@
 package to.msn.wings.quizapp
 
+import android.graphics.Color
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 class QuizActivity : AppCompatActivity() {
     private var mCurrentPosition:Int = 1
@@ -46,6 +49,7 @@ class QuizActivity : AppCompatActivity() {
     }
 
     private fun SetQuestion(){
+        defaultOptionView()
         val question:Question = mQuestionList!![mCurrentPosition - 1]
         ivImage?.setImageResource(question.image)
         progressBar?.progress = mCurrentPosition
@@ -60,6 +64,30 @@ class QuizActivity : AppCompatActivity() {
             btnSubmit?.text = "終了"
         }else{
             btnSubmit?.text = "次の問題へ"
+        }
+    }
+
+    private fun defaultOptionView(){
+        val options = ArrayList<TextView>()
+        tvOptionOne?.let{
+            options.add(0,it)
+        }
+        tvOptionTwo?.let{
+            options.add(1,it)
+        }
+        tvOptionThree?.let{
+            options.add(2,it)
+        }
+        tvOptionFour?.let{
+            options.add(3,it)
+        }
+
+        for(option in options){
+            option.setTextColor(Color.parseColor("#7A8089"))
+            option.background = ContextCompat.getDrawable(
+                this,
+                R.drawable.default_option_bg
+            )
         }
     }
 }
