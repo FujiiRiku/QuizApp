@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".QuizActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:text="この橋の名前を答えなさい" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/rainbow_bridge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progress="5"
+                android:max="10"
+                android:layout_marginEnd="20dp"
+                android:indeterminate="false"
+                style="?android:progressBarStyleHorizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5/10"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="明石海峡大橋"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:background="@drawable/default_option_bg"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="レインボーブリッジ"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:background="@drawable/default_option_bg"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="来間大橋"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:background="@drawable/default_option_bg"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="横浜ベイブリッジ"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:background="@drawable/default_option_bg"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="NEXT"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+</ScrollView>
