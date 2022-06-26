@@ -15,15 +15,17 @@
         android:padding="20dp">
 
         <TextView
+            android:id="@+id/tvQuestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:gravity="center"
             android:textStyle="bold"
             android:layout_marginBottom="20dp"
-            android:text="この橋の名前を答えなさい" />
+            tools:text="この橋の名前を答えなさい" />
 
         <ImageView
+            android:id="@+id/ivImage"
             android:layout_width="350dp"
             android:layout_height="200dp"
             android:layout_marginBottom="20dp"
@@ -36,27 +38,29 @@
             android:gravity="center_vertical">
 
             <ProgressBar
+                android:id="@+id/progressBar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:progress="5"
-                android:max="10"
                 android:layout_marginEnd="20dp"
                 android:indeterminate="false"
                 style="?android:progressBarStyleHorizontal"/>
 
             <TextView
+                android:id="@+id/tvProgress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5/10"
+                tools:text="5/10"
                 android:textSize="16sp"/>
 
         </LinearLayout>
 
         <TextView
+            android:id="@+id/tvOptionOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="明石海峡大橋"
+            tools:text="明石海峡大橋"
             android:gravity="center"
             android:layout_marginTop="20dp"
             android:padding="15dp"
@@ -65,9 +69,10 @@
             />
 
         <TextView
+            android:id="@+id/tvOptionTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="レインボーブリッジ"
+            tools:text="レインボーブリッジ"
             android:gravity="center"
             android:layout_marginTop="20dp"
             android:padding="15dp"
@@ -76,9 +81,10 @@
             />
 
         <TextView
+            android:id="@+id/tvOptionThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="来間大橋"
+            tools:text="来間大橋"
             android:gravity="center"
             android:layout_marginTop="20dp"
             android:padding="15dp"
@@ -87,9 +93,10 @@
             />
 
         <TextView
+            android:id="@+id/tvOptionFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="横浜ベイブリッジ"
+            tools:text="横浜ベイブリッジ"
             android:gravity="center"
             android:layout_marginTop="20dp"
             android:padding="15dp"
@@ -98,12 +105,13 @@
             />
 
         <Button
+            android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            android:text="NEXT"
+            tools:text="次の問題へ"
             android:padding="15dp"/>
 
     </LinearLayout>
