@@ -1,5 +1,6 @@
 package to.msn.wings.quizapp
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -139,7 +140,12 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener{
                             setQuestion()
                         }
                         else -> {
-                            //TODO:intent(resultactivity)
+                            val intent = Intent(this,ResultActivity::class.java)
+                            intent.putExtra(Constants.USER_NAME,mUserName)
+                            intent.putExtra(Constants.CORRECT_ANSWERS,mCorrectAnswer)
+                            intent.putExtra(Constants.TOTAL_QUESTIONS,mQuestionList?.size)
+                            startActivity(intent)
+                            finish()
                         }
                     }
                 }else{
