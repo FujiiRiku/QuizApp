@@ -4,4 +4,6 @@
     <string name="write_name">名前を入力してね</string>
     <string name="hint_name">Name</string>
     <string name="start">Game Start</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="finish">FINISH</string>
 </resources>
