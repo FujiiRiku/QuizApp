@@ -10,13 +10,23 @@ object Constants {
 
         //問題1
         val que1 = Question(
-            1,"この橋の名前を答えなさい",
-            R.drawable.rainbow_bridge,
-            "明石海峡大橋","レインボーブリッジ",
-            "来間大橋","横浜ベイブリッジ",
+            1,"兵庫県の県庁所在地はどこ",
+            R.drawable.hyogokencho,
+            "兵庫市","神戸市",
+            "神戸府","三宮",
             2
         )
         questionList.add(que1)
+
+        //問題2
+        val que2 = Question(
+            1,"兵庫県にある日本三古湯にも数えられる温泉はどれか",
+            R.drawable.arimaonsen,
+            "道後温泉","白浜温泉",
+            "草津温泉","有馬温泉",
+            4
+        )
+        questionList.add(que2)
 
         return questionList
     }
