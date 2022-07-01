@@ -102,7 +102,6 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener{
     private fun selectedOptionView(tv:TextView,selectedOptionNum:Int){
         defaultOptionView()
         mSelectedOptionPosition = selectedOptionNum
-        tv.setTypeface(tv.typeface,Typeface.BOLD)
         tv.background = ContextCompat.getDrawable(
             this,
             R.drawable.selected_option_bg
