@@ -98,6 +98,27 @@ object Constants {
         )
         questionList.add(que8)
 
+        //問題9
+        val que9 = Question(
+            9,
+            "1914年からスタートした宝塚歌劇ですが、男性の役は「男役」と呼びますが、女性の役は何と呼ぶでしょうか",
+            R.drawable.takaraduka,
+            "女役","姫役",
+            "娘役","嫁役",
+            3
+        )
+        questionList.add(que9)
+
+        //問題10
+        val que10 = Question(
+            10,
+            "兵庫県加西市にはギネス記録に認定された世界一大きなあるものが置いてあります。さてそれは何でしょうか",
+            R.drawable.maruyamasougoukouen,
+            "地球儀時計","日時計",
+            "砂時計","腕時計",
+            1
+        )
+        questionList.add(que10)
 
         return questionList
     }
