@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bg"
+    android:background="@drawable/yellow_bg"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="15dp"
@@ -62,7 +62,8 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:padding="10dp"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#FFA500"/>
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>

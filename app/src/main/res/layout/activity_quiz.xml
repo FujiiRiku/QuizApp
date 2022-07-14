@@ -112,7 +112,8 @@
             android:textStyle="bold"
             android:layout_marginTop="20dp"
             tools:text="次の問題へ"
-            android:padding="15dp"/>
+            android:padding="15dp"
+            android:backgroundTint="#FFA500"/>
 
     </LinearLayout>
 </ScrollView>
