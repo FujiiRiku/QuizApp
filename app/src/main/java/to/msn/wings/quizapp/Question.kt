@@ -1,5 +1,6 @@
 package to.msn.wings.quizapp
 
+/*問題のテンプレートを管理するデータクラス*/
 data class Question(
     val id:Int,
     val question:String,

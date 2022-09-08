@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val btnStart = findViewById<Button>(R.id.btnStart)
         val etName = findViewById<EditText>(R.id.etName)
 
+        /*ログイン画面のボタンを押したときの処理*/
         btnStart.setOnClickListener{
             if(etName.text.isNotEmpty()){
                 val intent = Intent(this,QuizActivity::class.java)

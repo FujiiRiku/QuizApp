@@ -1,5 +1,6 @@
 package to.msn.wings.quizapp
 
+/*問題を管理するクラス*/
 object Constants {
     const val USER_NAME:String = "user_name"
     const val TOTAL_QUESTIONS:String = "total_questions"

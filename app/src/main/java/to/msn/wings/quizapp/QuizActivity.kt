@@ -45,6 +45,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener{
         tvOptionFour = findViewById<TextView>(R.id.tvOptionFour)
         btnSubmit = findViewById<Button>(R.id.btnSubmit)
 
+        /*選択肢を選んだ時の処理*/
         tvOptionOne?.setOnClickListener(this)
         tvOptionTwo?.setOnClickListener(this)
         tvOptionThree?.setOnClickListener(this)
@@ -56,6 +57,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener{
         setQuestion()
     }
 
+    /*新しい問題を設定するする関数*/
     private fun setQuestion(){
         defaultOptionView()
         val question:Question = mQuestionList!![mCurrentPosition - 1]
@@ -75,6 +77,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener{
         }
     }
 
+    /*選択肢に背景を設定する関数*/
     private fun defaultOptionView(){
         val options = ArrayList<TextView>()
         tvOptionOne?.let{
@@ -99,6 +102,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener{
         }
     }
 
+    /*選択された選択肢に背景を設定する関数*/
     private fun selectedOptionView(tv:TextView,selectedOptionNum:Int){
         defaultOptionView()
         mSelectedOptionPosition = selectedOptionNum
@@ -108,6 +112,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener{
         )
     }
 
+    /*ボタンがクリックされたときの処理*/
     override fun onClick(view: View?) {
         when(view?.id){
             R.id.tvOptionOne -> {
@@ -169,6 +174,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener{
         }
     }
 
+    /*選択された選択肢の正解不正解を背景として設定する*/
     private fun answerView(answer:Int,drawableRes:Int){
         when(answer){
             1 -> {
